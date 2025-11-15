@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+#hero-sect{
+    background-image: url(https://img.freepik.com/free-photo/white-cloud-blue-sky-sea_74190-4488.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+    padding-top: 100px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    gap: 10px;
+    margin-top: 150px;
+   
+}
+#herobtn{
+    transition: all 0.2s linear;
+     &:hover{
+        background-color: green;
+        letter-spacing: 1px;
+    }
+}
+#reset{
+     padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: orange;
+    font-size: large;
+    text-transform: capitalize;
+    box-shadow: 2px 5px 10px black;
+    transition: all 0.2s linear;
+     &:hover{
+        background-color: red;
+        letter-spacing: 1px;
+    }
+}
+#herobtn{
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: orange;
+    font-size: large;
+    text-transform: capitalize;
+    box-shadow: 2px 5px 10px black;
+   
+}
+#imgtage{
+    height: 30%;
+    width: 30%;
+    object-fit: cover;
+    transform: rotate(10deg);
+    position: absolute;
+    left: -25%;
+    
+
+}
+@keyframes fly {
+    0%{
+        transform: translate(0);
+        transform: rotate(10deg);
+        
+       
+    }
+    85%{
+transform: translate(950px);
+    }
+    100%{
+        transform: translate(950px); 
+    }
+}
+#missile{
+    height: 20vh;
+    position: absolute;
+    right: -10%;
+    bottom: 65%;
+}
+@keyframes missile{
+     0%{
+        right: 0; 
+    }
+    85%{
+       right: 750px;
+
+    }
+    100%{
+       right: 750px;
+    }
+}
+#explosior{
+    height: 30vh;
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    transform: scale(0);
+    
+   
+}
+
+@keyframes explo{
+    0%{
+        transform: scale(0);
+    }
+    25%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(0);
+    }
+    75%{
+        transform: scale(0);
+    }
+  100%{
+    transform: scale(2);
+  }
+  
+}
+    
